@@ -34,74 +34,101 @@ a{ text-decoration:none;}
 }
 
 .box-title{
-    padding: 2% 0 2% 2%;
+    padding: 1% 0 1% 2%;
     font-weight: bold;
     border-bottom: 1px solid #e0e0e0;
+    background-color: #f9f9f9;
 }
 .content-box{
     width: 100%;
-    height: 130px;
+    /*height: 171px;*/
+    font-size: 14px;
+    color: #333333;
+    background-color: #f9f9f9;
 }
 .kpi-box{
     height: 65%;
     width: 22.5%;
     border: 1px solid #e0e0e0;
     float: left;
-    margin: 4% 1% 2% 1%;
+    margin: 2% 1% 2% 1%;
+    border-radius: 5px;
+}
+.kpi-name{
+    padding: 5% 0 2% 0;
+    font-size: 14px;
+    color: #333333;
+    font-weight: bold;
+    text-align: center;
+}
+.kpi-value{
+    padding: 2% 0 2% 0;
+    font-size: 14px;
+    text-align: center;
+}
+.kpi-value span{
+    font-size: 20px;
+    font-weight: bold;
+    color: #0091d5;
+}
+.kpi-progress{
+    margin: 0 7.5% 0 7.5%;
+    width: 85%;
+    background-color: #d0d0d0;
     border-radius: 5px;
 }
 
-
-
-.mess-box{
-    border: 1px solid #46b8da;
-    width: 100%;
-    height: 150px;
-    margin: 10px 2px 2px 0px;
+.kpi-progress div{
+    margin: 2% 0 2% 0;
+    width: 80%;
+    padding: 5% 0 5% 0;
+    background-color: #0091d5;
+    height: 100%;
+    border-radius: 5px;
 }
-.mess-box1{
-    border: 1px solid #46b8da;
-    width: 100%;
-    height: 150px;
-    margin: 10px 2px 2px 0px;
-}
-.chart-box{
-    border: 1px solid #46b8da;
-    width: 100%;
-    height: 250px;
-    margin: 10px 2px 2px 0px;
-}
-.table-box{
-    border: 1px solid #46b8da;
-    width: 100%;
-    height: 510px;
-    margin: 10px 2px 2px 0px;
-}
-.mess-title{
-    font-size: 16px;
-    width: 100%;
+.kpi-info{
+    padding: 1% 0 3% 0;
+    font-size: 14px;
     text-align: center;
 }
-.sec-mess_box{
-    width: 24%;
-    height: 120px;
-    border: 1px solid #46b8da;
-    /*background-color: #5bc0de;*/
-    /*margin: 5px 2px 2px 2px;*/
-    float: left;
-    display:inline;
-}
-ul {
-    display: block;
-    overflow: hidden;
-    white-space:nowrap;
-    margin: 5% 0px 0px 5%;
 
+
+.box-farm1{
+    /*background-color: #f9f9f9;*/
+    /*border: 1px solid #e0e0e0;*/
+    width: 49%;
+    padding: 0;
+ /*   border-radius: 5px;*/
 }
-li{
-    list-style: none;
-    display: inline-block;
-    margin-left: 1px;
-    width: 20%;
-    margin-bottom: 1%;
+
+.chart-box{
+    width: 100%;
+    border: 1px solid #e0e0e0;
+    border-radius: 5px;
 }
+
+.chart-title{
+    padding: 1% 0 1% 2%;
+    font-weight: bold;
+    border-bottom: 1px solid #e0e0e0;
+    background-color: #f9f9f9;
+}
+.chart-content{
+    height: 200px;
+}
+
+.box-table-search{
+    text-align: left;
+    padding: 2% 0 2% 2%;
+}
+.box-table-count{
+    text-align: left;
+    padding: 0% 0 0% 2%;
+}
+.table-box{
+
+    width: 100%;
+    height: 440px;
+    margin: 2% 2% 2% 2%;
+}
+
