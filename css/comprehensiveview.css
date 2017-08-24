@@ -3,7 +3,7 @@
  综合分析视图
 */
 html{ font-size:100%;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;}
-body { margin:0;padding:0; font:14px "Microsoft YaHei",san-serif; color:#333;}
+body { margin:0;padding:0; font:14px "Microsoft YaHei",san-serif; color:#333;background-color: #f5f5f5}
 div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,textarea,blockquote,p{padding:0; margin:0;}
 table,td,tr,th{font-size:14px;}
 li{list-style-type:none;}
@@ -16,3 +16,71 @@ a{ text-decoration:none;}
 .clear{ clear:both}
 *{ box-sizing:border-box}
 
+
+.box-farm{
+    background-color: #f9f9f9;
+    border: 1px solid #e0e0e0;
+    /*width: %;*/
+    padding: 0;
+    border-radius: 5px;
+}
+
+.box-title{
+    padding: 2% 0 2% 2%;
+    width: 100%;
+    font-weight: bold;
+    border-bottom: 1px solid #e0e0e0;
+    background-color: #f9f9f9;
+}
+.box-content{
+    padding: 1% 1% 1% 1%;
+    width: 100%;
+
+}
+.kip-name{
+    text-align: center;
+    font-weight: bold;
+    padding: 3% 0 2% 0;
+}
+.kip-value{
+    text-align: center;
+    padding: 1% 0 6% 0;
+}
+.kip-value span{
+    font-weight: bold;
+    font-size: 24px;
+    color: #0091d5;
+}
+.kpi-chart{
+    float: left;
+
+}
+
+.box-chart{
+    height: 150px;
+    width: 100%;
+}
+
+.kip-bottom-value{
+    text-align: center;
+    padding: 6% 0 10% 0;
+    border-bottom: 1px solid  #e0e0e0;
+}
+
+.span30{
+    font-weight: bold;
+    font-size: 30px;
+    color: #0091d5;
+}
+
+.span18{
+    font-weight: bold;
+    font-size: 18px;
+    color: #0091d5;
+}
+.span-col1{
+    color: #1c9833;
+}
+.span-col2{
+    color: #fa5200;
+}
