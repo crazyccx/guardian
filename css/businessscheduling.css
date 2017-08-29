@@ -100,6 +100,29 @@ a{ text-decoration:none;}
     padding: 0;
  /*   border-radius: 5px;*/
 }
+.box-farm2{
+    /*background-color: #f9f9f9;*/
+    /*border: 1px solid #e0e0e0;*/
+    width: 32%;
+    padding: 0;
+    /*   border-radius: 5px;*/
+}
+.box-farm3{
+    background-color: #f9f9f9;
+    border: 1px solid #e0e0e0;
+    width: 16%;
+    padding: 0;
+    border-radius: 5px;
+}
+.kpi-box3{
+    height: 65%;
+    width: 16%;
+    border: 1px solid #e0e0e0;
+    float: left;
+    margin: 2% 1% 2% 1%;
+    border-radius: 5px;
+}
+
 
 .chart-box{
     width: 100%;
@@ -132,3 +155,15 @@ a{ text-decoration:none;}
     margin: 2% 2% 2% 2%;
 }
 
+.box-title1{
+    padding: 2% 0 2% 2%;
+    font-weight: bold;
+    border-bottom: 1px solid #e0e0e0;
+    background-color: #f9f9f9;
+}
+
+.kpi-info1{
+    padding: 1% 0 8% 0;
+    font-size: 14px;
+    text-align: center;
+}
