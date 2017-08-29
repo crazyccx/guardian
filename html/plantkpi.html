@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>污水厂指标分析</title>
+    <link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/businessscheduling.css">
+    <script src="https://cdn.bootcss.com/jquery/2.1.1/jquery.min.js"></script>
+    <!--<script src="../../../js/bootstrap.js"></script>-->
+</head>
+<body style="background-color: #f5f5f5">
+
+<div class="container" style="width: 80%;margin-top: 2%;">
+    <div class="row">
+        <form id="org_search" class="form-inline search-box"  >
+            <!-- 查询条件：日期 -->
+            <div class="form-group " >
+                <label style="font-size: 14px;color: #333333;font-weight: normal"> 月份</label>
+                <input type="text" class="form-control" data-bind="value: search.tableDesc.value" />
+                <!--<div class="input-group" data-bind="component:{name:'datetime',params:{value:search.theDate.value,secondValue:search.theDate.secondValue,isBetween:true,datetimeOptions:{format:search.theDate.dataType.format}}}"></div>-->
+            </div>
+
+            <button class="btn btn-primary btn-sm" type="button" data-bind="click: doSearch">
+                <span class="glyphicon glyphicon-search" aria-hidden="true"></span>查询
+            </button>
+        </form>
+
+    </div>
+
+    <div class="row" style="margin-top: 1%">
+        <div class="col-sm-6 box-farm" >
+            <div class="box-title">
+                调度概况统计
+            </div>
+            <div class="content-box">
+                <div class="kpi-box" style="margin-left: 2%">
+                    <div class="kpi-name">
+                        处理水量
+                    </div>
+                    <div class="kpi-value">
+                        <span>22903</span>万吨
+                    </div>
+                    <div class="kpi-progress">
+                        <div></div>
+                    </div>
+                    <div class="kpi-info">
+                        同比：<font style="font-weight: bolder;font-size: 18px;color: #fa5200">10.01%</font>
+                    </div>
+                    <div class="kpi-info" style="padding-bottom: 5%">
+                        环比：<font style="font-weight: bolder;font-size: 18px;color: #1c9833">-10.99%</font>
+                    </div>
+                </div>
+                <div class="kpi-box">
+                    <div class="kpi-name">
+                        用电量
+                    </div>
+                    <div class="kpi-value">
+                        <span>22903</span>度
+                    </div>
+                    <div class="kpi-progress">
+                        <div></div>
+                    </div>
+                    <div class="kpi-info">
+                        同比：<font style="font-weight: bolder;font-size: 18px;color: #fa5200">10.01%</font>
+                    </div>
+                    <div class="kpi-info" style="padding-bottom: 5%">
+                        环比：<font style="font-weight: bolder;font-size: 18px;color: #1c9833">-10.99%</font>
+                    </div>
+                </div>
+                <div class="kpi-box">
+                    <div class="kpi-name">
+                        用药量
+                    </div>
+                    <div class="kpi-value">
+                        <span>22003</span>千克
+                    </div>
+                    <div class="kpi-progress">
+                        <div></div>
+                    </div>
+                    <div class="kpi-info">
+                        同比：<font style="font-weight: bolder;font-size: 18px;color: #fa5200">10.01%</font>
+                    </div>
+                    <div class="kpi-info" style="padding-bottom: 5%">
+                        环比：<font style="font-weight: bolder;font-size: 18px;color: #1c9833">-10.99%</font>
+                    </div>
+                </div>
+                <div class="kpi-box">
+                    <div class="kpi-name">
+                        出泥量
+                    </div>
+                    <div class="kpi-value">
+                        <span>22003</span>吨
+                    </div>
+                    <div class="kpi-progress">
+                        <div></div>
+                    </div>
+                    <div class="kpi-info">
+                        同比：<font style="font-weight: bolder;font-size: 18px;color: #fa5200">10.01%</font>
+                    </div>
+                    <div class="kpi-info" style="padding-bottom: 5%">
+                        环比：<font style="font-weight: bolder;font-size: 18px;color: #1c9833">-10.99%</font>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div class="col-sm-6 box-farm" style="margin-left: 2%">
+            <div class="box-title">
+                运行概况统计
+            </div>
+            <div class="content-box">
+                <div class="kpi-box" style="margin-left: 2%">
+                    <div class="kpi-name">
+                        运行负荷
+                    </div>
+                    <div class="kpi-value" style="margin: 6% 0 6% 0;">
+                        <span>22003</span>%
+                    </div>
+                    <div class="kpi-info">
+                        同比：<font style="font-weight: bolder;font-size: 18px;color: #fa5200">10.01%</font>
+                    </div>
+                    <div class="kpi-info" style="padding-bottom: 5%">
+                        环比：<font style="font-weight: bolder;font-size: 18px;color: #1c9833">-10.99%</font>
+                    </div>
+                </div>
+                <div class="kpi-box">
+                    <div class="kpi-name">
+                        平均电耗
+                    </div>
+                    <div class="kpi-value" style="margin: 6% 0 6% 0;">
+                        <span>22903</span>度/吨
+                    </div>
+                    <div class="kpi-info">
+                        同比：<font style="font-weight: bolder;font-size: 18px;color: #fa5200">10.01%</font>
+                    </div>
+                    <div class="kpi-info" style="padding-bottom: 5%">
+                        环比：<font style="font-weight: bolder;font-size: 18px;color: #1c9833">-10.99%</font>
+                    </div>
+                </div>
+                <div class="kpi-box">
+                    <div class="kpi-name">
+                        每吨泥药耗
+                    </div>
+                    <div class="kpi-value" style="margin: 6% 0 6% 0;">
+                        <span>22003</span>kg
+                    </div>
+                    <div class="kpi-info">
+                        同比：<font style="font-weight: bolder;font-size: 18px;color: #fa5200">10.01%</font>
+                    </div>
+                    <div class="kpi-info" style="padding-bottom: 5%">
+                        环比：<font style="font-weight: bolder;font-size: 18px;color: #1c9833">-10.99%</font>
+                    </div>
+                </div>
+                <div class="kpi-box">
+                    <div class="kpi-name">
+                        每万吨水药耗
+                    </div>
+                    <div class="kpi-value" style="margin: 6% 0 6% 0;">
+                        <span>22009</span>kg
+                    </div>
+                    <div class="kpi-info">
+                        同比：<font style="font-weight: bolder;font-size: 18px;color: #fa5200">10.01%</font>
+                    </div>
+                    <div class="kpi-info" style="padding-bottom: 5%">
+                        环比：<font style="font-weight: bolder;font-size: 18px;color: #1c9833">-10.99%</font>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="row" style="margin-top: 1%;">
+
+        <div class="col-sm-4 box-farm2" style="border-color: transparent !important;">
+            <div class="chart-box">
+                <div class="chart-title">
+                    当月污水厂运营情况分布（污泥浓度、平均耗电、运行负荷）
+                </div>
+                <div class="chart-content">
+                    图一
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-4 box-farm2" style="border-color: transparent !important; margin: 0 2% 0 2%">
+            <div class="chart-box">
+                <div class="chart-title">
+                    当月污水厂运营情况分布（污泥浓度、平均耗电、运行负荷）
+                </div>
+                <div class="chart-content">
+                    图二
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-4 box-farm2" style="border-color: transparent !important;">
+            <div class="chart-box">
+                <div class="chart-title">
+                    当月污水厂运营情况分布（污泥浓度、平均耗电、运行负荷）
+                </div>
+                <div class="chart-content">
+                    图三
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="row" style="margin-top: 1%;">
+
+        <div class="col-sm-4 box-farm2" style="border-color: transparent !important;">
+            <div class="chart-box">
+                <div class="chart-title">
+                    当月污水厂运营情况分布（污泥浓度、平均耗电、运行负荷）
+                </div>
+                <div class="chart-content">
+                    图一
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-4 box-farm2" style="border-color: transparent !important; margin: 0 2% 0 2%">
+            <div class="chart-box">
+                <div class="chart-title">
+                    当月污水厂运营情况分布（污泥浓度、平均耗电、运行负荷）
+                </div>
+                <div class="chart-content">
+                    图二
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-4 box-farm2" style="border-color: transparent !important;">
+            <div class="chart-box">
+                <div class="chart-title">
+                    当月污水厂运营情况分布（污泥浓度、平均耗电、运行负荷）
+                </div>
+                <div class="chart-content">
+                    图三
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="row" style="margin-top: 1%;margin-bottom: 2%">
+        <div class="col-sm-2 box-farm3" >
+            <div class="box-title1">
+                COD削减量
+            </div>
+            <div class="kpi-value" style="padding: 6% 0 6% 0;">
+                <span>22903</span>度/吨
+            </div>
+            <div class="kpi-info1" >
+                同比：<font style="font-weight: bolder;font-size: 18px;color: #fa5200">10.01%</font>
+                环比：<font style="font-weight: bolder;font-size: 18px;color: #fa5200">10.01%</font>
+            </div>
+        </div>
+        <div class="col-sm-2 box-farm3" style="margin-left: 0.8%">
+            <div class="box-title1">
+                TP削减量
+            </div>
+            <div class="kpi-value" style="padding: 6% 0 6% 0;">
+                <span>22903</span>度/吨
+            </div>
+            <div class="kpi-info1">
+                同比：<font style="font-weight: bolder;font-size: 18px;color: #fa5200">10.01%</font>
+                环比：<font style="font-weight: bolder;font-size: 18px;color: #fa5200">10.01%</font>
+            </div>
+        </div>
+        <div class="col-sm-2 box-farm3" style="margin-left: 0.8%">
+            <div class="box-title1">
+                NH3-N削减量
+            </div>
+            <div class="kpi-value" style="padding: 6% 0 6% 0;">
+                <span>22903</span>度/吨
+            </div>
+            <div class="kpi-info1">
+                同比：<font style="font-weight: bolder;font-size: 18px;color: #fa5200">10.01%</font>
+                环比：<font style="font-weight: bolder;font-size: 18px;color: #fa5200">10.01%</font>
+            </div>
+        </div>
+        <div class="col-sm-2 box-farm3" style="margin-left: 0.8%">
+            <div class="box-title1">
+                平均进水COD浓度
+            </div>
+            <div class="kpi-value" style="padding: 6% 0 6% 0;">
+                <span>22903</span>度/吨
+            </div>
+            <div class="kpi-info1">
+                同比：<font style="font-weight: bolder;font-size: 18px;color: #fa5200">10.01%</font>
+                环比：<font style="font-weight: bolder;font-size: 18px;color: #fa5200">10.01%</font>
+            </div>
+        </div>
+        <div class="col-sm-2 box-farm3" style="margin-left: 0.8%">
+            <div class="box-title1">
+                进水水质达标率
+            </div>
+            <div class="kpi-value" style="padding: 6% 0 6% 0;">
+                <span>22903</span>度/吨
+            </div>
+            <div class="kpi-info1">
+                同比：<font style="font-weight: bolder;font-size: 18px;color: #fa5200">10.01%</font>
+                环比：<font style="font-weight: bolder;font-size: 18px;color: #fa5200">10.01%</font>
+            </div>
+        </div>
+        <div class="col-sm-2 box-farm3" style="margin-left: 0.8%">
+            <div class="box-title1">
+                出水水质达标率
+            </div>
+            <div class="kpi-value" style="padding: 6% 0 6% 0;">
+                <span>22903</span>度/吨
+            </div>
+            <div class="kpi-info1">
+                同比：<font style="font-weight: bolder;font-size: 18px;color: #fa5200">10.01%</font>
+                环比：<font style="font-weight: bolder;font-size: 18px;color: #fa5200">10.01%</font>
+            </div>
+        </div>
+    </div>
+
+
+
+</div>
+
+</body>
+</html>
