@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <title>效益分析</title>
+    <link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/cbAnalysis.css">
+</head>
+<body>
+    <div class="container" style="width: 90%;margin-top: 2%;">
+        <!--查询区域 -->
+        <div class="row">
+            <form id="org_search" class="form-inline search-box"  >
+                <!-- 查询条件：日期 -->
+                <div class="form-group " >
+                    <label > 月份</label>
+                    <input type="text" class="form-control" data-bind="value: search.tableDesc.value" />
+                    <!--<div class="input-group" data-bind="component:{name:'datetime',params:{value:search.theDate.value,secondValue:search.theDate.secondValue,isBetween:true,datetimeOptions:{format:search.theDate.dataType.format}}}"></div>-->
+                </div>
+
+                <button class="btn btn-primary btn-sm" type="button" data-bind="click: doSearch">
+                    <span class="glyphicon glyphicon-search" aria-hidden="true"></span>查询
+                </button>
+            </form>
+        </div>
+        <!-- 内容区域-->
+        <div class="row" style="margin-top: 0.5%">
+            <div class="col-md-12">
+                <div class="navbar">
+                    <ul>
+                        <li><span >处理水量</span></li>
+                        <li><span >出泥量</span></li>
+                        <li><span >用电量</span></li>
+                        <li><span >用药量</span></li>
+                    </ul>
+                </div>
+            </div>
+
+
+
+        </div>
+    </div>
+</body>
+</html>
